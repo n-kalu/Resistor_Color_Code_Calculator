@@ -29,39 +29,74 @@ int main()
     // }
     // printf("\nBig Number: %.lf", 1e9);
 
-    char *num[] = {"2", "5", "8", "9"};
-    char arr[]= "Jane";
-    char buf[10];
-    char buf2[10];
+    // char *num[] = {"2", "5", "8", "9"};
+    // // char arr[]= "Jane";
+    // char buf[10];
+    // char *buff = buf;
 
-    int num1;
-    int num2;
-    int sum;
+    // char buf2[10];
+    // char *buff2 = buf2;
+
+    // int num1;
+    // int num2;
+    // int sum;
 
 
-    for (int i = 0; i < 4; i++)
-    {
-        if (i==0)
-        {
-            strcpy(buf, num[i]);
-        }
-        if(i==2)
-        {
-            strcat(buf, num[i]);
-        }
-        if(i==1)
-        {
-            strcpy(buf2, num[i]);
-        }
-        if(i==3)
-        {
-            strcat(buf2, num[i]);
-        }
+    // for (int i = 0; i < 4; i++)
+    // {
+    //     if (i==0)
+    //     {
+    //         strcpy(buff, num[i]);
+    //     }
+    //     if(i==2)
+    //     {
+    //         strcat(buff, num[i]);
+    //     }
+    //     if(i==1)
+    //     {
+    //         strcpy(buff2, num[i]);
+    //     }
+    //     if(i==3)
+    //     {
+    //         strcat(buff2, num[i]);
+    //     }
         
-    }
+    // }
 
-    printf("%d + %d = %d", atoi(buf), atoi(buf2), atoi(buf) + atoi(buf2));
+    // printf("%d + %d = %d", atoi(buff), atoi(buff2), atoi(buff) + atoi(buff2));
     
+
+
+
+    char name[20];
+    char *name1 = name;
+    char c = ' ';
+
+    
+    printf("Enter Name: ");
+    fgets(name1, 20, stdin);
+    // scanf("%s", name1);
+    
+    int len = strlen(name1);
+    // name[len - 1] = '\0';
+
+    // printf("\nYou entered: %s", name1);
+
+    char buf[10];
+
+    for(int i; i < len - 1; i++)
+    {
+        if(name1[i] == ' ')
+        {
+            printf("Empty String\n");
+        }
+        else
+        {
+            printf("%c\n", name1[i]);
+        }
+    }
+    
+
 
     printf("\n");
     return(0);
